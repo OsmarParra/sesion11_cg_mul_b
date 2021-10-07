@@ -41,7 +41,7 @@ function init() {
     var arrCube = [];
     var t = 2.2;
 
-// el nuemro de cubos que se van a mostrar
+// el numero de cubos que se van a mostrar 
 
     var numcum=6;
     for (var i = 0; i < numcum; i++){
@@ -49,7 +49,8 @@ function init() {
         rotar= Math.PI/2
         arrCube.push(cubo(t, t, t,0,0,0, 'Basic',(i==0 ? 'red':i==1 ? 'green':i==2 ?'blue':i==3 ?'orange':i==4 ? 'white':i==5? 'purple':'pink'), false));
  
-//0 lo tenemos que es el origen tanto para x,y y z , con la i es la condicion de cubos el cual va subiendo y multiplicando t el tamaño de cada cubo. Lo que hace el translate es permitirnos mover los cubos luego de ser creados        
+// 0 lo tenemos que es el origen tanto para x,y y z , con la i es la condicion de cubos el cual va subiendo y multiplicando t el tamaño de cada cubo.
+// Lo que hace el translate es permitirnos mover los cubos luego de ser creados        
 
         arrCube[i].geometry.translate(0+i*t,0+i*t,0)
 
